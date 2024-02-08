@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Manicure & Pedicure",
+        "image": "https://i.ibb.co/tcVyLh4/banner.webp",
+        "price": "$30",
+        "description": "Treat yourself to a luxurious manicure and pedicure session to rejuvenate your hands and feet."
+    },
+    {
+        "id": 2,
+        "name": "Facial Massage",
+        "image": "https://i.ibb.co/tcVyLh4/banner.webp",
+        "price": "$40",
+        "description": "Indulge in a soothing facial massage to relax your facial muscles and rejuvenate your skin."
+    },
+    {
+        "id": 3,
+        "name": "Hair Styling",
+        "image": "https://i.ibb.co/tcVyLh4/banner.webp",
+        "price": "$50",
+        "description": "Transform your look with our professional hair styling services, from cuts to styling and coloring."
+    },
+    {
+        "id": 4,
+        "name": "Full Body Massage",
+        "image": "https://i.ibb.co/tcVyLh4/banner.webp",
+        "price": "$60",
+        "description": "Relax and unwind with a full body massage to release tension and promote overall well-being."
+    },
+    {
+        "id": 5,
+        "name": "Waxing",
+        "image": "https://i.ibb.co/tcVyLh4/banner.webp",
+        "price": "$25",
+        "description": "Achieve smooth and silky skin with our waxing services, available for various body parts."
+    },
+    {
+        "id": 6,
+        "name": "Makeup Application",
+        "image": "https://i.ibb.co/tcVyLh4/banner.webp.jpg",
+        "price": "$45",
+        "description": "Enhance your natural beauty or glam up for a special occasion with our professional makeup application."
+    }
+]
