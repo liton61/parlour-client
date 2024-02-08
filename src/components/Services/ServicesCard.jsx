@@ -9,8 +9,15 @@ const ServicesCard = ({ service }) => {
                 <figure><img src={image} alt="" className="h-40 w-full" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
-                    <p>{description}</p>
-                    <p>{price}</p>
+                    <p className="text-justify">{description}</p>
+                    <div>
+                        <i className="fa-solid fa-star text-yellow-500"></i>
+                        <i className="fa-solid fa-star text-yellow-500"></i>
+                        <i className="fa-solid fa-star text-yellow-500"></i>
+                        <i className="fa-solid fa-star text-yellow-500"></i>
+                        <i className="fa-solid fa-star-half-stroke text-yellow-500"></i>
+                    </div>
+                    <p className="text-[#F63E7B] font-medium">Price : {price}</p>
                     <div className="card-actions">
                         <button className="bg-[#F63E7B] p-3 rounded text-white font-semibold w-full">Book Now</button>
                     </div>
