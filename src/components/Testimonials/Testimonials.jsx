@@ -14,7 +14,7 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://restaurant-server-side-azure.vercel.app/reviews')
+        fetch('reviews.json')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
@@ -39,6 +39,7 @@ const Testimonials = () => {
                                 readOnly
                             />
                             <p className="py-8 text-justify">{review.details}</p>
+                            <img className="w-20 h-20 rounded-full" src={review.image} alt="" />
                             <h3 className="text-2xl text-orange-400">{review.name}</h3>
                         </div>
                     </SwiperSlide>)
