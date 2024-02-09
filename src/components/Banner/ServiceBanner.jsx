@@ -4,8 +4,8 @@ import service from '../../assets/images/service.png';
 const ServiceBanner = () => {
     return (
         <div>
-            <div className="hero min-h-screen bg-pink-50">
-                <div className="hero-content flex-col lg:flex-row lg:w-3/4 mx-auto">
+            <div className="hero min-h-screen bg-pink-100">
+                <div className="hero-content flex-col lg:flex-row lg:w-3/4 mx-auto lg:px-0 px-5">
                     <img src={service} className="lg:w-1/2 rounded" />
                     <div className='lg:w-1/2 lg:pl-10'>
                         <h1 className="text-4xl font-bold">Let us handle your screen <span className='text-[#F63E7B]'>professionally </span></h1>

@@ -4,8 +4,8 @@ import girl from '../../assets/images/girl.png'
 const Banner = () => {
     return (
         <div>
-            <div className="hero bg-pink-50">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="hero bg-pink-100">
+                <div className="hero-content flex-col lg:flex-row-reverse lg:px-0 px-5">
                     <img src={girl} className="lg:w-1/2" />
                     <div className='lg:w-1/2'>
                         <h1 className="text-5xl font-bold">BEAUTY SALON FOR EVERY WOMEN</h1>

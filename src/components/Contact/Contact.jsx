@@ -2,7 +2,7 @@
 
 const Contact = () => {
     return (
-        <div className="bg-pink-50">
+        <div className="bg-pink-100">
             <h1 className="text-3xl text-center font-bold pt-12">Let us handle your
                 <br></br>project, <span className='text-[#F63E7B]'>professionally </span></h1>
             <form className="lg:w-1/2 mx-auto py-14 lg:px-0 px-5">
