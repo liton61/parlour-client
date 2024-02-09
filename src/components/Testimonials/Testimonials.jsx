@@ -22,7 +22,7 @@ const Testimonials = () => {
     return (
         <section className="my-20 lg:w-3/4 mx-auto lg:px-0 md:px-5 px-5">
             <div className='w-64 mx-auto my-10'>
-                <p className='text-yellow-500 text-center mb-2'>---What Our Clients Say---</p>
+                <p className='text-[#F63E7B] text-center mb-2'>---What Our Clients Say---</p>
                 <h3 className='text-xl font-semibold border-y-4 text-center py-3'>TESTIMONIALS</h3>
             </div>
 
