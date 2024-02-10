@@ -33,14 +33,14 @@ const Testimonials = () => {
                         key={review._id}
                     >
                         <div className="lg:w-3/4 mx-auto flex flex-col items-center p-10 my-16 border">
+                            <img className="w-20 h-20 rounded-full" src={review.image} alt="" />
+                            <h3 className="text-2xl mt-2 text-orange-400">{review.name}</h3>
+                            <p className="py-5 text-justify">{review.details}</p>
                             <Rating
                                 style={{ maxWidth: 180 }}
                                 value={review.rating}
                                 readOnly
                             />
-                            <p className="py-8 text-justify">{review.details}</p>
-                            <img className="w-20 h-20 rounded-full" src={review.image} alt="" />
-                            <h3 className="text-2xl mt-2 text-orange-400">{review.name}</h3>
                         </div>
                     </SwiperSlide>)
                 }
