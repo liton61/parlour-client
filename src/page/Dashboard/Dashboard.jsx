@@ -39,7 +39,7 @@ const Dashboard = () => {
                                                 <i className="fa-solid fa-list"></i> Order List
                                             </NavLink></li>
                                             <li className="font-medium mb-2"><NavLink
-                                                to="/dashboard/adService"
+                                                to="/dashboard/addService"
                                                 className={({ isActive, isPending }) =>
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
@@ -52,7 +52,8 @@ const Dashboard = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                <i className="fa-solid fa-bars"></i> Mange Service
+                                                <i className="fas fa-th-large"></i>
+                                                Mange Service
                                             </NavLink></li>
                                             <li className="font-medium mb-2"><NavLink
                                                 to="/dashboard/allUsers"
@@ -82,7 +83,7 @@ const Dashboard = () => {
                                                 <i className="fa-solid fa-cart-plus"></i> Booking List
                                             </NavLink></li>
                                             <li className="font-medium mb-2"><NavLink
-                                                to="/dashboard/bookingList"
+                                                to="/dashboard/review"
                                                 className={({ isActive, isPending }) =>
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }

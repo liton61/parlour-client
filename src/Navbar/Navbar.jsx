@@ -90,7 +90,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li className="font-medium"><NavLink
+                        <li className="font-medium px-2"><NavLink
                             to="/"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
@@ -98,15 +98,7 @@ const Navbar = () => {
                         >
                             Home
                         </NavLink></li>
-                        <li className="font-medium"><NavLink
-                            to="/menu"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                        >
-                            Menu
-                        </NavLink></li>
-                        <li className="font-medium"><NavLink
+                        <li className="font-medium px-2"><NavLink
                             to="/about"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
@@ -114,7 +106,7 @@ const Navbar = () => {
                         >
                             About
                         </NavLink></li>
-                        <li className="font-medium"><NavLink
+                        <li className="font-medium px-2"><NavLink
                             to="/contact"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
@@ -124,7 +116,7 @@ const Navbar = () => {
                         </NavLink></li>
                         {
                             user && isAdmin &&
-                            <li className="font-medium"><NavLink
+                            <li className="font-medium px-2"><NavLink
                                 to="/dashboard/adminHome"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
@@ -135,7 +127,7 @@ const Navbar = () => {
                         }
                         {
                             user && !isAdmin &&
-                            <li className="font-medium"><NavLink
+                            <li className="font-medium px-2"><NavLink
                                 to="/dashboard/userHome"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""

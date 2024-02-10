@@ -10,6 +10,11 @@ import Dashboard from "../page/Dashboard/Dashboard";
 import UserHome from "../page/Dashboard/UserHome";
 import AdminHome from "../page/Dashboard/AdminHome";
 import AllUsers from "../page/AllUsers/AllUsers";
+import BookingList from "../page/Dashboard/BookingList";
+import Review from "../page/Dashboard/Review";
+import OrderList from "../page/Dashboard/OrderList";
+import AddService from "../page/Dashboard/AddService";
+import ManageService from "../page/Dashboard/ManageService";
 
 
 const router = createBrowserRouter([
@@ -50,11 +55,31 @@ const router = createBrowserRouter([
                 path: "userHome",
                 element: <UserHome></UserHome>,
             },
+            {
+                path: "bookingList",
+                element: <BookingList></BookingList>,
+            },
+            {
+                path: "review",
+                element: <Review></Review>,
+            },
 
             // admin dashboard
             {
                 path: "adminHome",
-                element: <AdminHome></AdminHome>
+                element: <AdminHome></AdminHome>,
+            },
+            {
+                path: "orderList",
+                element: <OrderList></OrderList>,
+            },
+            {
+                path: "addService",
+                element: <AddService></AddService>,
+            },
+            {
+                path: "manageService",
+                element: <ManageService></ManageService>,
             },
             {
                 path: "allUsers",
