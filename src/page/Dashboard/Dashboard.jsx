@@ -31,6 +31,30 @@ const Dashboard = () => {
                                                 <i className="fa-solid fa-house"></i>Admin Home
                                             </NavLink></li>
                                             <li className="font-medium mb-2"><NavLink
+                                                to="/dashboard/orderList"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                <i className="fa-solid fa-list"></i> Order List
+                                            </NavLink></li>
+                                            <li className="font-medium mb-2"><NavLink
+                                                to="/dashboard/adService"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                <i className="fa-solid fa-plus"></i> Add Service
+                                            </NavLink></li>
+                                            <li className="font-medium mb-2"><NavLink
+                                                to="/dashboard/manageService"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                <i className="fa-solid fa-bars"></i> Mange Service
+                                            </NavLink></li>
+                                            <li className="font-medium mb-2"><NavLink
                                                 to="/dashboard/allUsers"
                                                 className={({ isActive, isPending }) =>
                                                     isPending ? "pending" : isActive ? "active" : ""
@@ -47,7 +71,23 @@ const Dashboard = () => {
                                                     isPending ? "pending" : isActive ? "active" : ""
                                                 }
                                             >
-                                                <i className="fa-solid fa-house"></i>User Home
+                                                <i className="fa-solid fa-house"></i> User Home
+                                            </NavLink></li>
+                                            <li className="font-medium mb-2"><NavLink
+                                                to="/dashboard/bookingList"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                <i className="fa-solid fa-cart-plus"></i> Booking List
+                                            </NavLink></li>
+                                            <li className="font-medium mb-2"><NavLink
+                                                to="/dashboard/bookingList"
+                                                className={({ isActive, isPending }) =>
+                                                    isPending ? "pending" : isActive ? "active" : ""
+                                                }
+                                            >
+                                                <i className="fa-solid fa-user-pen"></i> Review
                                             </NavLink></li>
                                         </>
                                 }

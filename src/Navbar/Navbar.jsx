@@ -84,13 +84,13 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <div className="w-20 font-medium">
+                    <div className="w-32 font-medium">
                         <img src={logo} alt="" />
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li className="mx-2 font-medium"><NavLink
+                        <li className="font-medium"><NavLink
                             to="/"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
@@ -98,7 +98,15 @@ const Navbar = () => {
                         >
                             Home
                         </NavLink></li>
-                        <li className="mx-2 font-medium"><NavLink
+                        <li className="font-medium"><NavLink
+                            to="/menu"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                        >
+                            Menu
+                        </NavLink></li>
+                        <li className="font-medium"><NavLink
                             to="/about"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
@@ -106,7 +114,7 @@ const Navbar = () => {
                         >
                             About
                         </NavLink></li>
-                        <li className="mx-2 font-medium"><NavLink
+                        <li className="font-medium"><NavLink
                             to="/contact"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
@@ -116,7 +124,7 @@ const Navbar = () => {
                         </NavLink></li>
                         {
                             user && isAdmin &&
-                            <li className="mx-2 font-medium"><NavLink
+                            <li className="font-medium"><NavLink
                                 to="/dashboard/adminHome"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
@@ -127,7 +135,7 @@ const Navbar = () => {
                         }
                         {
                             user && !isAdmin &&
-                            <li className="mx-2 font-medium"><NavLink
+                            <li className="font-medium"><NavLink
                                 to="/dashboard/userHome"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
