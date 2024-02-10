@@ -6,6 +6,10 @@ import About from "../page/About/About";
 import Contact from "../page/Contact/Contact";
 import Login from "../page/Login/Login";
 import Register from "../page/Register/Register";
+import Dashboard from "../page/Dashboard/Dashboard";
+import UserHome from "../page/Dashboard/UserHome";
+import AdminHome from "../page/Dashboard/AdminHome";
+import AllUsers from "../page/AllUsers/AllUsers";
 
 
 const router = createBrowserRouter([
@@ -31,11 +35,33 @@ const router = createBrowserRouter([
                 element: <Login></Login>,
             },
             {
-                path:"/register",
-                element:<Register></Register>,
+                path: "/register",
+                element: <Register></Register>,
             }
         ],
     },
+    {
+        path: "dashboard",
+        element: <Dashboard></Dashboard>,
+        children: [
+
+            // user dashboard
+            {
+                path: "userHome",
+                element: <UserHome></UserHome>,
+            },
+
+            // admin dashboard
+            {
+                path: "adminHome",
+                element: <AdminHome></AdminHome>
+            },
+            {
+                path: "allUsers",
+                element: <AllUsers></AllUsers>,
+            }
+        ]
+    }
 ]);
 
 export default router;

@@ -34,7 +34,7 @@ const Register = () => {
     }
     return (
         <div>
-            <div className="bg-base-200 flex items-center justify-center py-16">
+            <div className="bg-base-200 flex items-center justify-center py-10 lg:px-0 md:px-0 px-5">
                 <div className="bg-white w-96 p-8 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-2 text-center">Register</h2>
                     <form onSubmit={handleRegister}>

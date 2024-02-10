@@ -1,11 +1,14 @@
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
+import { useContext } from 'react';
 import logo from '../assets/icons/logo.png';
-import { useContext } from "react";
-import { AuthContext } from "../authentication/Provider/AuthProvider";
+import { AuthContext } from '../authentication/Provider/AuthProvider';
+import useAdmin from '../hooks/useAdmin';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
+    const [isAdmin] = useAdmin();
 
     const handleSingOut = () => {
         logOut()
@@ -34,6 +37,14 @@ const Navbar = () => {
                                 Home
                             </NavLink></li>
                             <li className="font-medium"><NavLink
+                                to="/menu"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                            >
+                                Menu
+                            </NavLink></li>
+                            <li className="font-medium"><NavLink
                                 to="/about"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
@@ -49,15 +60,7 @@ const Navbar = () => {
                             >
                                 Contact
                             </NavLink></li>
-                            {/* <li className="font-medium"><NavLink
-                                to="/dashboard/cart"
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""
-                                }
-                            >
-                                <i className="fa-solid fa-cart-plus"></i>+{item.length}
-                            </NavLink></li> */}
-                            {/* {
+                            {
                                 user && isAdmin &&
                                 <li className="font-medium"><NavLink
                                     to="/dashboard/adminHome"
@@ -78,10 +81,10 @@ const Navbar = () => {
                                 >
                                     Dashboard
                                 </NavLink></li>
-                            } */}
+                            }
                         </ul>
                     </div>
-                    <div className="w-32">
+                    <div className="w-20 font-medium">
                         <img src={logo} alt="" />
                     </div>
                 </div>
@@ -111,15 +114,7 @@ const Navbar = () => {
                         >
                             Contact
                         </NavLink></li>
-                        {/* <li className="font-medium mb-2"><NavLink
-                            to="/dashboard/cart"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                        >
-                            <i className="fa-solid fa-cart-plus"></i> Cart ({item.length})
-                        </NavLink></li> */}
-                        {/* {
+                        {
                             user && isAdmin &&
                             <li className="mx-2 font-medium"><NavLink
                                 to="/dashboard/adminHome"
@@ -140,7 +135,7 @@ const Navbar = () => {
                             >
                                 Dashboard
                             </NavLink></li>
-                        } */}
+                        }
                     </ul>
                 </div>
                 <div className="navbar-end">
